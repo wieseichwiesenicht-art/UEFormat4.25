@@ -1,0 +1,30 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"EngineVersion": "4.25.0",
+	"FriendlyName": "UEFormat",
+	"Description": "An .uemodel/.ueanim importer for Unreal Engine",
+	"Category": "Importers",
+	"CreatedBy": "Zain / Marcel K.",
+	"CreatedByURL": "https://github.com/KaiserM21",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UEFormatZstd",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "UEFormat",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
