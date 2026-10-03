@@ -7,7 +7,7 @@ Anyways then Kiro forked the UPlugin and made a compatible 4.26 version out of i
 and i started doing a version for 4.25
 
 
-I was using a little bit claude for the code so its around 3 - 8% vibe coded, thats why there are so many parts that look like it was made by AI so dont wonder
+I was using a little bit claude for the code so its around 3 - 8% is vibe coded, thats why there are so many parts that look like it was made by AI so dont wonder
 
 ### Credits
 - [Marcel K.](https://marcelk.dev) (Importer)
