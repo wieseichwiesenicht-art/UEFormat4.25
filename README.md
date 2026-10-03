@@ -6,6 +6,9 @@ This Plugin was orginally based on a Blender Plugin but TBC created a UPlugin ou
 Anyways then Kiro forked the UPlugin and made a compatible 4.26 version out of it, it somehow doesnt work anymore so yeah
 and i started doing a version for 4.25
 
+
+I was using a little bit claude for the code so its around 3 - 8% vibe coded, thats why there are so many parts that look like it was made by AI so dont wonder
+
 ### Credits
 - [Marcel K.](https://marcelk.dev) (Importer)
 - https://github.com/h4lfheart (Format Specs)
