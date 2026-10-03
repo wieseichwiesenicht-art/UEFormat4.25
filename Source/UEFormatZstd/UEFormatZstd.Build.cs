@@ -1,8 +1,6 @@
 using System.IO;
 using UnrealBuildTool;
 
-// zstd lives in its own module so its C sources are compiled without the
-// C++ precompiled header (UE 4.24+ force-includes the PCH into .c files too).
 public class UEFormatZstd : ModuleRules
 {
 	public UEFormatZstd(ReadOnlyTargetRules Target) : base(Target)
@@ -23,7 +21,6 @@ public class UEFormatZstd : ModuleRules
 			}
 		);
 
-		// Export the zstd API from this module's DLL so UEFormat can link against it.
 		PrivateDefinitions.Add("ZSTD_DLL_EXPORT=1");
 
 		PrivateDependencyModuleNames.AddRange(
