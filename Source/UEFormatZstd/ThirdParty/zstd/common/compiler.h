@@ -11,11 +11,6 @@
 #ifndef ZSTD_COMPILER_H
 #define ZSTD_COMPILER_H
 
-/*-*******************************************************
-*  Compiler specifics
-*********************************************************/
-/* force inlining */
-
 #if !defined(ZSTD_NO_INLINE)
 #if defined (__GNUC__) || defined(__cplusplus) || defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L   /* C99 */
 #  define INLINE_KEYWORD inline
@@ -38,23 +33,9 @@
 
 #endif
 
-/**
- * FORCE_INLINE_TEMPLATE is used to define C "templates", which take constant
- * parameters. They must be inlined for the compiler to eliminate the constant
- * branches.
- */
+
 #define FORCE_INLINE_TEMPLATE static INLINE_KEYWORD FORCE_INLINE_ATTR
-/**
- * HINT_INLINE is used to help the compiler generate better code. It is *not*
- * used for "templates", so it can be tweaked based on the compilers
- * performance.
- *
- * gcc-4.8 and gcc-4.9 have been shown to benefit from leaving off the
- * always_inline attribute.
- *
- * clang up to 5.0.0 (trunk) benefit tremendously from the always_inline
- * attribute.
- */
+
 #if !defined(__clang__) && defined(__GNUC__) && __GNUC__ >= 4 && __GNUC_MINOR__ >= 8 && __GNUC__ < 5
 #  define HINT_INLINE static INLINE_KEYWORD
 #else
